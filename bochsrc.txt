@@ -1,0 +1,23 @@
+# Minimal bochsrc for developing a bootloader (adjust paths if needed)
+
+megs: 16
+
+# Use system BIOS/VGA ROMs (path may vary by distro)
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest.bin
+
+# Boot from a floppy image in the project directory
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+ata0-master: type=disk, path="disk.img"
+boot: disk
+
+# CPU / timing / display
+cpu: count=1
+clock: sync=realtime
+display_library: x
+
+# Logging / debugging
+log: /home/jack/programming/jackos-bootloader/bochs.log
+panic: action=ask
+
+magic_break: enabled=1

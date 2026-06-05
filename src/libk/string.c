@@ -1,0 +1,10 @@
+#include <stddef.h>
+
+
+void* memset(void* dest, int val, size_t count) {
+    unsigned char* ptr = (unsigned char*)dest;
+    for (size_t i = 0; i < count; i++) {
+        ptr[i] = (unsigned char)val;
+    }
+    return dest;
+}
