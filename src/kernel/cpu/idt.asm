@@ -1,0 +1,8 @@
+[BITS 64]
+[section .text]
+[global load_idt]
+[extern idtr]
+
+load_idt:
+    lidt [idtr]
+    ret

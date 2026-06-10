@@ -1,0 +1,14 @@
+Hello, World!
+Bootloader magic: 0xb19b00b5
+PMM: Initializing with 0xffffffff801053e0 mmap entries
+mmap[0]: base=0x0, length=0x9f000, type=0x1
+mmap[1]: base=0x9f000, length=0x1000, type=0x2
+mmap[2]: base=0xe8000, length=0x18000, type=0x2
+mmap[3]: base=0x100000, length=0xef0000, type=0x1
+mmap[4]: base=0xff0000, length=0x10000, type=0x3
+mmap[5]: base=0xfffc0000, length=0x40000, type=0x2
+PMM: highest_address=0xff0000, max_blocks=0xff0, bitmap_size=0x1fe
+Usable block: base=0x0, length=0x9f000
+Usable block: base=0x100000, length=0xef0000
+PMM initialization complete. Free memory starts at 0x10c000
+Warning: Framebuffer address 0xe0000000 is above the highest address 0xff0000 detected in the memory map. Skipping reservation.
